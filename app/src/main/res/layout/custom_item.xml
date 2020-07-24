@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.cardview.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="12dp"
+        app:cardUseCompatPadding="true"
+        android:id="@+id/cardview"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_calendar"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/icon"
+            android:layout_alignTop="@id/icon"
+            android:layout_marginLeft="10dp"
+            android:textSize="22dp"
+            android:hint="ooooooooo"/>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:hint="yyyy-mm-dd"
+            android:layout_alignParentRight="true"
+            android:textSize="18dp"
+            android:maxLines="1"
+            android:layout_marginRight="15dp"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/date"
+            android:hint="hh:mm ~ hh:mm"
+            android:maxLines="1"
+            android:textSize="18dp"
+            android:layout_marginRight="15dp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

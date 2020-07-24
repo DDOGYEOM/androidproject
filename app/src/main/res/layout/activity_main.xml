@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/login_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="25dp"
+        android:text="my planner"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_marginBottom="80dp">
+
+        <EditText
+            android:id="@+id/userId"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:textSize="15dp"
+            android:hint="아이디를 입력하세요" />
+
+        <EditText
+            android:id="@+id/userPass"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:textSize="15dp"
+            android:hint="패스워드를 입력하세요" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/btn_login"
+            android:text="로그인"/>
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/btn_register"
+            android:text="회원가입"/>
+
+    </LinearLayout>
+
+</LinearLayout>
